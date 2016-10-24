@@ -1,0 +1,2 @@
+# automaton
+Simple react CLI
