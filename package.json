@@ -1,0 +1,25 @@
+{
+  "name": "automaton",
+  "version": "0.0.1",
+  "description": "Simple React CLI",
+  "main": "automaton.js",
+  "scripts": {
+    "test": "echo \\\"Error: Please do write tests for me, sensei\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esseswann/automaton.git"
+  },
+  "keywords": [
+    "CLI",
+    "React",
+    "automatization",
+    "automaton"
+  ],
+  "author": "Esse Swann <esseswann@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/esseswann/automaton/issues"
+  },
+  "homepage": "https://github.com/esseswann/automaton#readme"
+}
