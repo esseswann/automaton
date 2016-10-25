@@ -18,7 +18,7 @@ if (args.length === 0) {
   const cc =
 `import React from 'react'
 
-const ${name} = React.createClass({
+export const ${name} = React.createClass({
   render() {
     return (
       <div></div>
@@ -32,7 +32,7 @@ export default ${name}
   const sf =
 `import React from 'react'
 
-const ${name} = (props) =>
+export const ${name} = (props) =>
   <div></div>
 
 export default ${name}
@@ -41,7 +41,7 @@ export default ${name}
   const ec =
 `import React, { Component } from 'react'
 
-class ${name} extends Component {
+export class ${name} extends Component {
   render() {
     return (
       <div></div>
@@ -55,7 +55,7 @@ export default ${name}
   const pr =
 `import React, { PureComponent } from 'react'
 
-class ${name} extends PureComponent {
+export class ${name} extends PureComponent {
   render() {
     return (
       <div></div>
@@ -79,7 +79,7 @@ export default ${name}
           ? console.log(fileErr)
           : appendFile(
             `src/components/index.js`,
-            `\nimport ${name} from './${name}/${name}'\nexport const ${name}`,
+            `\nexport { ${name} } from './${name}/${name}'`,
             exportErr => exportErr
               ? console.log(exportErr)
               : console.log(`Component ${name} created`)
