@@ -79,7 +79,7 @@ export default ${name}
           ? console.log(fileErr)
           : appendFile(
             `src/components/index.js`,
-            `\nexport ${name} from './${name}/${name}'`,
+            `\nimport ${name} from './${name}/${name}'\nexport const ${name}`,
             exportErr => exportErr
               ? console.log(exportErr)
               : console.log(`Component ${name} created`)
